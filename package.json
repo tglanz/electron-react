@@ -2,7 +2,7 @@
   "name": "electron-react",
   "productName": "electron-react",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "some description for electron-react",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -15,36 +15,7 @@
   "author": "user",
   "license": "MIT",
   "config": {
-    "forge": {
-      "make_targets": {
-        "win32": [
-          "squirrel"
-        ],
-        "darwin": [
-          "zip"
-        ],
-        "linux": [
-          "deb",
-          "rpm"
-        ]
-      },
-      "electronPackagerConfig": {
-        "packageManager": "yarn"
-      },
-      "electronWinstallerConfig": {
-        "name": "electron_react"
-      },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
-      "github_repository": {
-        "owner": "",
-        "name": ""
-      },
-      "windowsStoreConfig": {
-        "packageName": "",
-        "name": "electronreact"
-      }
-    }
+    "forge": "./forge.config.js"
   },
   "dependencies": {
     "electron-compile": "^6.4.2",
